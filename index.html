@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width-device-width, initial-scale1.0">
+    <meta name="viewport" content="width-device-width, initial-scale1.1">
     <title>Thomas Maly Full Stack Portfolio</title>
     <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/style.css">
@@ -17,19 +17,19 @@
 
     <nav>
         <ul>
-            <li>About me</li>
-            <li>Work</li>
-            <li>Contact Me</li>
-            <li>Resume</li>
+            <li><a href="#aboutme">About me</a></li>
+            <li><a href="#main">Work</a></li>
+            <li><a href="#email">Contact Me</a></li>
+            <li><a href="#github">Resume</a></li>
         </ul>
     </nav>
 
-    <section class="banner">
+    <banner class="banner">
         <img src="./assets/images/hori.jpg" alt="banner image">
-    </section>
+    </banner>
     
     <main>
-        <h2>About Me</h2>
+        <h2 id="aboutme">About Me</h2>
             <p>Sheesh bro i really dont know how to talk about myself. Sheesh bro i really dont know how to talk about myself.Sheesh bro i really dont know how to talk about myself.Sheesh bro i really dont know how to talk about myself.</p>
     </main>
 
@@ -43,55 +43,56 @@
         </Section> -->
 
         <br>
+    <main id="main">
+            <Section class="feature"></Section>
+            <div class="featurebox">
+                <h2>HTML Proj</h2>
+                <p>Some text..</p>
+                <img src="./assets/images/stock1.jpg">
+                </div>
+            </section>
 
-        <div class="wrapper">
-        <Section class="flex-container">
+            <br>
 
-            <div class="box one">
-                <h3 class="box header">Minor Proj 1</h3>
-                    <div class="box body">
-                        <p>palceholder text</p>
-                    </div>
-                        <img src="./assets/images/stock1.jpg">
-            </div>
-                    
-            <div class="box two">
-                <h3 class="box header">Minor Proj 2</h3>
-                    <div class="box-body">
-                        <p>palceholder text</p>
-                    </div>
-                        <img src="./assets/images/stock2.webp">                     
-            </div>
+            <Section class="row">
+                <div class="column">
+                <h2>HTML Proj</h2>
+                <p>Some text..</p>
+                <img src="./assets/images/stock2.webp">
+                </div>
 
-            <div class="bow three">
-                <h3 class="box header">Minor Proj 3</h3>
-                    <div class="box-body">
-                        <p>palceholder text</p>
-                    </div>
-                        <img src="./assets/images/stock3.jpg">                    
-            </div>
+                <div class="column">
+                <h2>CSS Proj</h2>
+                <p>Some text..</p>
+                <img src="./assets/images/stock3.jpg">
+                </div>
 
-            <div class="box four">
-                    <h3 class="box header">Minor Proj 4</h3>
-                    <div class="box-body">
-                        <p>palceholder text</p>
-                    </div>
-                        <img src="./assets/images/stock4.jpg">                    
-            </div>
-        </Section>
-        </div>
+                <div class="column">
+                <h2>Java Proj</h2>
+                <p>Some text..</p>
+                <img src="./assets/images/stock4.jpg">
+                </div>
 
-    <footer>
-        <h4>Contact Me</h4>
+                <div class="column">
+                <h2>Misc Proj</h2>
+                <p>Some text..</p>
+                <img src="./assets/images/stock 5.jpg">
+                </div>
+            </Section>        
+    </main>
+        <nav  id="email">
             <ul>
-                <li id="email"><a href="mailto:thomasjaymaly@gmail.com"><Strong>Email</Strong></a></li>
-                <li>862-202-0067</li>
-                <li><a href="https://www.google.com">Google.com</a></li>
-                <Li><a href="https://github.com/ThomasJay44">Github</a></Li>
+                <li><a href="mailto:thomasjaymaly@gmail.com"><Strong>Email</Strong></a></li>
+                <li id="number">862-202-0067</li>
+                <li id="google"><a href="https://www.google.com">Google.com</a></li>
+                <Li id="github"><a href="https://github.com/ThomasJay44">Github</a></Li>
             </ul>
+        </nav>
+
+
         <h5>CopyLeft 656 Services 2022</h5>
 
-    </footer>
+   
 
     
 

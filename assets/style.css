@@ -1,29 +1,14 @@
 body {
     background-color: rgb(234, 248, 238);
 }
+/* 
+body {
+    display: block;
+} */
 
 body {
-    /* Sans Serif font stack is implemented to help select the best font for each type of computer operating system */
     font-family: Arial, Helvetica, sans-serif;
-  
-    /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
-    font-size: 1.75rem;
-    line-height: 1.5;
-    color: var(--gin);
-    background-color: var(--outer-space);
-    max-width: 100%;
   }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom: 0.625rem;
-  font-weight: 700;
-  line-height: 1.1;
-}
 
 p {
     margin-bottom: 1rem;
@@ -50,12 +35,18 @@ nav {
     text-align: center;
     background-color: rgb(245, 176, 137);
     padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 nav ul{
     color: rgb(2, 82, 2);
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 25%;
+    padding: 5px;
 }
 
 nav li{
@@ -66,134 +57,24 @@ nav li{
     display: inline-block;
     font-size: 24px;
     border-radius: 12px;
+    flex: 25%;
+    padding: 5px;
 }
 
 .banner img {
     max-width: 100%;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-  }
-
-  .justify-center {
-    justify-content: center;
-  }
-
-  div {
-    background-color: aliceblue;
-    margin: 5px;
-    padding: 5px;
-  }
-
-  div figure h3 {
-    position: relative;
-    top: 27px;
-    display: block;
-    width: 100%;
-    
-
-  }
-
-  .card-column {
-    flex: 1 0 100%;
-    padding: 1.5rem;
-    /* when the screen resizes, make it so our columns don't jump in size */
-    transition: flex-basis 500ms linear;
-    margin-bottom: 1.5rem;
-  }
-
-  /* make each code card a flexbox column to align and justify content within it */
-.code-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-height: 100%;
-    padding: 2rem;
-    color: purple;
-  
-    /* outline is like border, but on the outside of the box instead of inside */
-    outline: 2px solid black;
-    /* outline-offset: -2px; */
-    transition: all 0.5s ease-in-out;
-    border-radius: 4px;
-  }
-
-  .code-card .card-header {
-    /* use position and negative margins to move title of card over the card's outline and create an overlap effect */
-    position: relative;
-    margin: -3rem 0 1.5rem 0;
-    padding: 0.5rem 1rem;
-    background-color: rgb(94, 93, 93);
-    color: white;
-    border: 2px solid black;
-    border-radius: 8px;
-    transition: all 0.5s ease-in-out;
-   }
-
-section div img {
-        height: 200px;
-        width: 200px;
-        border: 0px;
-        border-radius: 8px;
-        
-    }
-
 main {
 
     background-color: rgb(197, 221, 243);
-}
+  }
 
 main p {
     line-height: 2em;
 
 }
 
-footer {
-        background-color: rgb(2, 82, 2);
-        text-align: center;
-        font-size: 30px;
-        width: 100%;
-}
-
-footer h4 {
-        color: rgb(245, 176, 137);
-        background-color: white;
-        border: 5px solid rgb(245, 176, 137);
-        display: inline-block;
-        border-radius: 12px;
-        margin: 15px;
-}
-
-footer ul {
-    text-align: center;
-    background-color: rgb(245, 176, 137);
-    padding: 10px;
-}
-
-footer li {
-    text-align: center;
-    border: 3px solid rgb(2, 82, 2);
-    background-color: white;
-    width: 22%;
-    display: inline-block;
-    font-size: 24px;
-    border-radius: 12px;
-}
-
-footer h5 {
-    color: rgb(245, 176, 137);
-    background-color: white;
-    border: 5px solid rgb(245, 176, 137);
-    display: inline-block;
-    border-radius: 5px;
-    margin: 15px;
-    font-size: 12px;
-}
 
 /* Pseudo */
 
@@ -202,16 +83,100 @@ nav li:hover {
     background-color: darkgoldenrod;
 }
 
-footer li:hover {
-        text-decoration: underline;
-        background-color: darkgoldenrod;
-    }
+.feature {
+    display: flex;
+    flex-direction: column;
+}
 
+.featurebox {
+    flex: 100%;
+    padding: 20px;
+    outline: 4px solid black;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  
+  .column {
+    flex: 25%;
+    padding: 20px;
+    outline: 4px solid black;
+  }
+
+  div img {
+    max-height: 100px;
+  }
+
+
+  
+  @media screen and (max-width: 992px) {
+    .column {
+      flex: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+
+.h5 {text-align: center;}
+
+/* 
+.box {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 100%;
+        padding: 2rem;
+        color: purple;
+        outline: 2px solid black;
+        transition: all 0.5s ease-in-out;
+        border-radius: 4px;
+      } */ */
+
+/* 
+@media screen and (min-width: 992px)
+.box {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+}
+
+@media screen and (min-width: 768px)
+.box {
+    flex: 0 0 50%;
+    max-width: 50%;
+} */
+
+/* 
+.grid {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(12, 1fr);
+}
+ */
+
+/* 
+.box {
+    height: 100px;
+    min-width: 100px;   
+}
+ */
+
+/* 
 @media screen and (max-width:560px) {
     section div {
         display: block;
     }
-}
+} */
 
 /* .figure:hover {
     position: relative;
