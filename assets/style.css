@@ -66,13 +66,32 @@ nav li{
 }
 
 main {
-
+    display: flex;
+    justify-content: space-between;
     background-color: rgb(197, 221, 243);
   }
 
+main .h2 {
+    display: 
+}
+
 main p {
     line-height: 2em;
+}
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main div {
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+}
+
+main img {
+    width: 100%;
 }
 
 
